@@ -3,7 +3,13 @@ h1
 background-color: red;
 color: rosybrown;
 }
-h2{
+h2
+{
     background-color: royalblue;
     color: seashell;
+}
+h3
+{
+    background-color: springgreen;
+    color: teal;
 }
