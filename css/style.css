@@ -1,15 +1,7 @@
-h1
+.div1
 {
-background-color: red;
-color: rosybrown;
-}
-h2
-{
-    background-color: royalblue;
-    color: seashell;
-}
-h3
-{
-    background-color: springgreen;
-    color: teal;
+    background-color: red;
+    height: 900px;
+    width: 900px;
+    align-items: center;
 }
