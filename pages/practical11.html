@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Document</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            color: grey;
+            margin-top: 50px;
+        }
+        .footer
+        {
+            
+            width: 100%;
+            background-color: grey;
+            position: absolute;
+            bottom: 0;
+        }
+        .content
+        {
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+        .about
+        {
+            width: 25%;
+            background-color: honeydew;
+            text-align: justify;
+            padding: 10px;
+
+
+        }
+       
+        .categories
+        {
+            width: 25%;
+            background-color: hotpink;
+            text-align: justify;
+            padding: 20px;
+        }
+        .quicklink
+        {
+            width: 25%;
+            background-color: indianred;
+            text-align: justify;
+            padding: 20px;
+        }
+        .contact
+        {
+            width: 25%;
+            background-color: khaki;
+            text-align: justify;
+            padding: 20px;
+        }
+        .contact ul li a i
+        {
+            margin-right: 10px;
+        }
+        ul
+        {
+           
+            padding: 0px !important;
+            list-style-type: none;
+            
+        }
+       
+        a{
+            text-decoration: none;
+            color: turquoise;
+        }
+        a:hover
+        {
+            color: white;   
+        }
+        .middle
+        {
+            padding:10px;
+            text-align: center;
+            color: whitesmoke;
+            border-bottom: 1px solid black;
+            
+            
+        }
+        .middle p span
+        {
+            font-size: 30px;
+            margin-right: 10px;
+            
+            
+        }
+        .middle a{
+            display: inline-block;
+            background-color:red;
+            border-radius: 30px;
+            padding: 20px;
+            margin-right: 10px;
+            color: whitesmoke;
+            
+        }
+        .middle a:hover
+        {
+            color: black;
+            background-color: gold;
+        }
+        .logos
+        {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid black;
+
+        }
+        .logos a
+        {
+            margin-left: 10px;
+        }
+        .logos img
+        {
+            height: 60px;
+            width:60px;
+            border-radius: 50%;
+            box-shadow: indigo;
+            line-height: auto;
+        }
+        .copywrite
+        {
+            display: flex;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            justify-content: center;
+
+        }
+        .copywrite p{
+            position: relative;
+        }
+        .copywrite p::after
+        {
+            
+            content: '';
+            display: block;
+            width: 0;
+            height:2px;
+            position: absolute;
+            right: 0;
+            bottom: -10px;
+            background-color: yellow;
+            transition: all .3s;
+        }
+        .copywrite p:hover::after
+        {
+            width: 100%;
+        }
+        @media(max-width:982px)
+        {
+            .content
+            {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .about
+            {
+                width: 100%;
+            }
+        
+       
+        .categories
+        {
+            width: 28%;
+            background-color: hotpink;
+            text-align: justify;
+            padding: 20px;
+        }
+        .quicklink
+        {
+            width: 28%;
+            background-color: indianred;
+            text-align: justify;
+            padding: 20px;
+        }
+        .contact
+        {
+            width: 28%;
+            background-color: khaki;
+            text-align: justify;
+            padding: 20px;
+        }
+
+
+        }
+
+        @media(max-width:782px)
+        {
+            .content
+            {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .about
+            {
+                width: 100%;
+            }
+        
+       
+        .categories
+        {
+            width: 100%;
+            background-color: hotpink;
+            text-align: justify;
+            padding: 20px;
+        }
+        .quicklink
+        {
+            width: 100%;
+            background-color: indianred;
+            text-align: justify;
+            padding: 20px;
+        }
+        .contact
+        {
+            width: 100%;
+            background-color: khaki;
+            text-align: justify;
+            padding: 20px;
+        }
+    }
+        @media(max-width:394px)
+        {
+            .logos img
+        {
+            height: 30px;
+            width:30px;
+            border-radius: 50%;
+            box-shadow: indigo;
+            line-height: auto;
+        }
+        .middle
+        {
+            padding:10px;
+            text-align: center;
+            color: whitesmoke;
+            border-bottom: 1px solid black;
+            
+            
+        }
+        .middle p span
+        {
+            font-size: 20px;
+            margin-right: 10px;
+            
+            
+        }
+        .middle a{
+            display: inline-block;
+            background-color:red;
+            border-radius: 30px;
+            padding: 10px;
+            margin-right: 10px;
+            color: whitesmoke;
+            
+        }
+        .middle a:hover
+        {
+            color: black;
+            background-color: gold;
+        }
+        .copywrite
+        {
+            display: flex;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            justify-content: center;
+
+        }
+
+     }
+
+
+
+        
+    </style>
+
+</head>
+
+<body>
+   <h1>Content Area</h1> 
+   <div class="footer">
+       <div class="content">
+           <div class="about">
+               <h2>ABOUT</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quaerat vitae dolorem fuga corrupti, dolores, sunt quae, est suscipit exercitationem soluta quis atque eveniet eaque obcaecati recusandae consectetur placeat cum?</p>
+            </div>
+            <div class="categories">
+                <h2>CATEGORIES</h2>
+                <ul>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">UI DESGNING</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">JAVA</a></li>
+                    <li><a href="#">ANDROID</a></li>
+                    <li><a href="#">HYBRID APPS</a></li>
+                </ul>
+            </div>
+            <div class="quicklink">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">CONTRIBUTE</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">SITEMAP</a></li>
+                    <li><a href="#">DISCLAMIMER</a></li>
+                </ul>
+
+            </div>
+            <div class="contact">
+                <h2>CONTACT US</h2>
+                <ul>
+                    <li><a href="#"><i class="fa fa-home"></i>36/23 MASTER COLONY </a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i></i>ashishsoniiglas@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>MOBILE:7454051983</a></li>
+                    <li><a href="#"><i class="fa fa-facebook-square"></i>ASHISHSONI12</a></li>
+                   
+                </ul>
+
+            </div>
+
+
+
+       </div>
+       <div class="middle">   
+            <p><span>Register for free</span>
+            <a href="#">SIGN UP!</a>
+            </p>
+           
+       </div>
+       <div class="logos">
+           <a href="#"><img src="../assets/whatsapp.png" alt=""></a>
+           <a href="#"><img src="../assets/facebbok.png" alt=""></a>
+           <a href="#"><img src="../assets/linkedin.png" alt=""></a>
+           <a href="#"><img src="../assets/instagramorg.png" alt=""></a>
+       </div>
+       <div class="copywrite">
+           <p>@2020copyright:MDBOOTSTRAP.com</p>
+       </div>
+
+    </div>
+</body>
+</html>
