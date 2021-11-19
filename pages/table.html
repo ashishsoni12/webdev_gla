@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+            width: 800px;
+            height: 100px;
+            
+        }
+        table,td,th{
+            border:1px solid;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        td{
+            height: 20px;
+        }
+        caption
+        {
+            caption-side: bottom;
+            color: burlywood;
+        }
+        tfoot
+        {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+        <caption>List of courses
+        </caption>
+        <tr>
+            <th>course name</th>
+            <th>course duration</th>
+            <th>price</th>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                Programming language
+            </td>
+            <td>
+                2 months
+            </td>
+            <td>
+                rs 50000
+            </td>
+        </tr>
+        <tr>
+            <td>web development</td>
+            <td>3 months</td>
+            <td>rs 60000</td>
+        </tr>
+        <tr>
+            <td>android</td>
+            <td>4 months</td>
+            <td>rs 40000</td>
+        </tr>
+        <tfoot>
+        <tr>
+            <td colspan="2">total</td>
+            <td></td>
+        </tr>
+    </tfoot>
+    </table>
+    
+</body>
+</html>

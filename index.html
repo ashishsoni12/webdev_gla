@@ -5,9 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME PAGE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        table
+        {
+            border-collapse: collapse;
+            width: 1000px;
+            background-color:white
+        }
+        table,tr
+        {
+            border: 1px solid black;
+        }
+        td,th
+        {
+            padding: 10px;
+        }
+        caption
+        {
+           background-color: darkcyan;
+           color: white;
+           padding: 10px;
+        }
+        i{
+            color: grey;
+        }
+        .table
+        {
+            display: flex;
+            justify-content: center;
+        }
+
+
+    </style>
 </head>
 <body>
-    <div style="background-color:lightcoral;">
+    <div style="background-color:lightcoral; height: 100vh;">
     <h1 style="text-align: center; color:black"><b>Welcome To Live Practical Book<b></b></h1>
     <p style = "text-align: center; margin-left: 30px;margin-right: 30px; color:seagreen">
         This is Live Practicle Book for the subject Fullstack Web Development-1.In this book we are performing all the practicles
@@ -15,57 +48,142 @@
         You can view all the the practicls from this Book.
 
     </p>
-    <div style="background-color:lightgoldenrodyellow; padding:2px;height: 900px ;width:1100px; margin-left: auto;margin-right: auto; margin: top 150px;">
-        <h1 style="color: darkgreen;text-align: center;">List of Practicls</h1>
-        <p style="margin-left: 20px;">
-            1.Create a web page including HTML basic skeleton using offine HTML Editor and Online Sandbox ENvironment.
-            <a href="./pages/practical1.html" style="float: right ; margin-right:70px">practical 1</a>
-        </p>
-        <p style="margin-left: 20px;">
-            2.Create a Web page showing a basic html structure using character Entities and span Tag.
-            <a href="./pages/practical2.html" style="float: right ; margin-right:70px">practical 2</a>
-        </p>
-        <p style="margin-left: 20px;">
-            3.Live your First-Page on Git-Hub.
-            <a href="./pages/practical3.html" style="float: right ; margin-right:70px">practical 3</a>
-        </p>
-        <p style="margin-left: 20px;">
-           4.Create a website having list of all practicle and their individual practical Page links.
-           <a href="./index.html" style="float: right ; margin-right:70px">practical 4</a>
-        </p>
-        <p style="margin-left: 20px;">
-            5.Create a Webpage showing use of image-map in the web application.
-            <a href="./pages/practical5.html" style="float: right ; margin-right:70px">practical 5</a>
-         </p>
-         <p style="margin-left: 20px;">
-            6.Create a Card Layout using CSS layout properties.
-            <a href="./pages/practical6.html" style="float: right ; margin-right:70px">practical 6</a>
-         </p>
-         <p style="margin-left: 20px;">
-            7.Create a Web Page Layout using div tags.
-            <a href="./pages/practical7.html" style="float: right ; margin-right:70px">practical 7</a>
-         </p>
-         <p style="margin-left: 20px;">
-            8.Create a Web Page having Fixed Navigation Bar with the given content.
-            <a href="./pages/practical8.html" style="float: right ; margin-right:70px">practical 8</a>
-         </p>
-         <p style="margin-left: 20px;">
+    <div class="table" >
+        <table>
+            <caption>List of Practicals</caption>
+           <tr>
+               <th>Sr.no</th>
+               <th>Practical Name</th>
+               <th>Link</th>
+               <th>Status</th>
+               <th>Tools</th>
+           </tr> 
+           <tr>
+               <td>1</td>
+               <td>Create a web page including HTML basic skeleton using offine HTML Editor and Online Sandbox ENvironment.</td>
+               <td><a href="./practical1.html">Practical-1</a></td>
+               <td>checked</td>
+               <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+           </tr>
+           <tr>
+            <td>2</td>
+            <td>Create a responsive site</td>
+            <td><a href="./practical2.html">Practical-2</a></td>
+            <td>checked</td>
+            <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
             
-            9.Create a Responsive Web Layout with Responsive Navigation Bar.
-            <a href="./pages/practical9.html" style="float: right ; margin-right:70px">practical 9</a>
-         </p>
-         <p style="margin-left: 20px;">
+            </tr>
+    
+            <tr>
+            <td>3</td>
+            <td>Live your First-Page on Git-Hub.</td>
+            <td><a href="./practical3.html">Practical-3</a></td>
+            <td>checked</td>
+            <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+    
+            <tr>
+            <td>4</td>
+            <td>4.Create a website having list of all practicle and their individual practical Page links.</td>
+            <td><a href="./index.html">Practical-4</a></td>
+            <td>checked</td>
+            <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
             
-            10.Create a Responsive Side-Bar Navigation Menu.
-            <a href="./pages/practical10.html" style="float: right ; margin-right:70px">practical 10</a>
-         </p>
-         <p style="margin-left: 20px;">
+            </tr>
+    
+            <tr>
+            <td>5</td>
+            <td>Create a Webpage showing use of image-map in the web application.</td>
+            <td><a href="./practical5.html">Practical-5</a></td>
+            <td>checked</td>
+            <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
             
-            10.Create a Responsive Footer Template.
-            <a href="./pages/practical11.html" style="float: right ; margin-right:70px">practical 11</a>
-         </p>
-
-         
+            </tr>
+    
+    
+            <tr>
+            <td>6</td>
+            <td>Create a Card Layout using CSS layout properties.</td>
+            <td><a href="./practical6.html">Practical-6</a></td>
+            <td>checked</td>
+            <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            
+            </tr>
+    
+    
+            <tr>
+            <td>7</td>
+            <td>Create a Web Page Layout using div tags.</td>
+            <td><a href="./practical7.html">Practical-7</a></td>
+            <td>checked</td>
+            <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+    
+            <tr>
+            <td>8</td>
+            <td>Create a Web Page having Fixed Navigation Bar with the given content.</td>
+            <td><a href="./practical8.html">Practical-8</a></td>
+            <td>checked</td>
+            <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+    
+            <tr>
+            <td>9</td>
+            <td>Create a Responsive Web Layout with Responsive Navigation Bar.</td>
+            <td><a href="./practical2.html">Practical-9</a></td>
+            <td>checked</td>
+            <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+    
+            <tr>
+            <td>10</td>
+            <td>Create a Responsive Side-Bar Navigation Menu.</td>
+            <td><a href="./practical10.html">Practical-10</a></td>
+            <td>checked</td>
+            <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+    
+            <tr>
+                <td>11</td>
+                <td>Create a Responsive Footer Template.</td>
+                <td><a href="./practical11.html">Practical-11</a></td>
+                <td>checked</td>
+                <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Create a Table that represent Live Practical Book Records .</td>
+                <td><a href="./index.html">Practical-12</a></td>
+                <td>checked</td>
+                <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Create a Custom Price Table Template.</td>
+                <td><a href="./pages/practical13.html">Practical-13</a></td>
+                <td>checked</td>
+                <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Create a Counter Page using JavaScript as per the attached Templates.</td>
+                <td><a href="./pages/practical14.html">Practical-14</a></td>
+                <td>checked</td>
+                <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Create an HTML Form and Validate it with JavaScript (Client-side Programming Language).
+                    .</td>
+                <td><a href="./pages/practical15.html">Practical-14</a></td>
+                <td>checked</td>
+                <td><i class="fa fa-pencil"></i> <i class="fa fa-trash"></i></td>
+            </tr>
+    
+    
+    
+        </table>
+        
         </div>
     </div>
 </body>

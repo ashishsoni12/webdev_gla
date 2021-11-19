@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: darkcyan;
+        }
+        #decreament,#increament
+        {
+            width: 40px;
+            height:50px;
+            background-color: yellow;
+            font-size: 20px;
+            margin: 0% 20px;
+        }
+        #decreament:hover,#increament:hover
+        {
+            background-color: burlywood;
+        }
+        .container
+        {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            white-space: normal;
+        }
+        
+        
+        #value
+        {
+            font-size: 50px;
+            margin-top: 0%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">COUNTER</h1>
+    <div class="container">
+        
+        <button id="decreament" onclick="dec()">-</button>
+        <span><h2 id="value"></h2></span>
+        <button id="increament" onclick="inc()">+</button>
+
+    </div>
+    <script>
+       
+        let data=0;
+        document.getElementById("value").innerText=data;
+        function dec()
+        {  
+            if(data==0)
+            {
+                document.getElementById("decreament").disabled=true;
+                return null;
+            }
+            data -= 1;
+            document.getElementById("value").innerText=data;
+            
+        }
+        function inc()
+        {
+            data+=1;
+            document.getElementById("value").innerText=data;
+            document.getElementById("decreament").disabled=false;
+        }
+    </script>
+
+</body>
+</html>
